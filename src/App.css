@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+.app {
+	min-height: 100vh;
+	position: relative;
+	padding: 2rem;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.top-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+.back-arrow {
+	width: 2rem;
+	cursor: pointer;
+}
+
+.app-container {
+	min-height: calc(100vh - 4rem);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.graph {
+	border-radius: 1.2rem;
+	margin: auto;
+	width: 100%;
+	max-width: 50rem;
+	border: 1px solid #d6d6d6;
+	padding: 1.5rem 1rem;
+	aspect-ratio: 327/260;
+	position: relative;
+}
+
+.graph-container {
+	position: relative;
+	height: 100%;
+}
+
+.graph-header {
+	font-size: 2rem;
+	font-weight: 500;
+	margin-bottom: 1rem;
+}
+
+.graph-container img {
+	position: absolute;
+}
+
+.graph-bg {
+	width: 100%;
+}
+
+.seek-path {
+	width: 100%;
+	opacity: 0;
+}
+
+.others-path {
+	opacity: 0;
+	width: 100%;
+	margin-top: 2%;
+}
+
+.seek-thumb {
+	width: 6%;
+}
+
+.others-thumb {
+	width: 6%;
+}
+
+.seek-text {
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	opacity: 0;
+	color: #4462ef;
+	font-weight: 500;
+	font-size: 1.2rem;
+}
+
+.others-text {
+	position: absolute;
+	right: 5%;
+	top: 85%;
+	opacity: 0;
+	color: #b8acf6;
+	font-weight: 500;
+	font-size: 1.2rem;
+}
+
+.graph-labels {
+	position: absolute;
+	width: calc(100% - 2rem);
+	display: flex;
+	justify-content: space-between;
+	bottom: 1rem;
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.button {
+	width: 100%;
+	width: 100%;
+	height: 5rem;
+	display: flex;
+	margin: 0 auto;
+	cursor: pointer;
+	max-width: 50rem;
+	transition: all 1s;
+	align-items: center;
+	border-radius: 1.2rem;
+	justify-content: center;
+	background: linear-gradient(106.06deg, #d6d6d6 32.65%, #d6d6d6 105.18%);
+}
+
+.button.blue {
+	background: linear-gradient(106.06deg, #4462ef 32.65%, #1b3dd8 105.18%);
+}
+
+.button p {
+	font-size: 1.8rem;
+	font-weight: 1.6rem;
+	font-weight: 600;
+	color: #ffffff;
+}
